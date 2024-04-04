@@ -16,7 +16,7 @@ This project is a simple script that announces the current time in a colloquial 
 Run the script with the desired root path as an argument. If no argument is provided, the current directory is used as the root path.
 
 ```sh
-./speak_time.sh [/path/to/root]
+./speak_time.sh [/absolute/path/to/script/directory]
 ```
 
 Note: The root path argument is only needed if you are running this script via a cronjob.
