@@ -1,5 +1,5 @@
 # Time Speaker Project
-This project is a simple script that announces the current time in a colloquial manner using text-to-speech synthesis. It's designed to run on a Unix-like operating system with the shell.
+This project is a simple script that announces the current time in a conversational manner using text-to-speech synthesis. It's designed to run on a Unix-like operating system with the shell.
 
 ## Requirements
 - Unix-like operating system
@@ -13,21 +13,21 @@ This project is a simple script that announces the current time in a colloquial 
 - Update the **piper_path** variable in the script with the path to your Piper installation.
 
 ## Usage
-Run the script with the desired root path as an argument. If no argument is provided, the current directory is used as the root path.
+Run the script with the absolute path to the script directory as an argument. If no argument is provided, the current directory is used as the absolute path to the script directory.
 
 ```sh
 ./speak_time.sh [/absolute/path/to/script/directory]
 ```
 
-Note: The root path argument is only needed if you are running this script via a cronjob.
+Note: The **absolute path to script directory** argument is only needed if you run this script via a cronjob.
 
 ### How it works
 The script performs the following steps:
 
 1. Retrieves the current time and converts it to 12-hour and 24-hour formats.
 2. Determines the part of the day (morning, afternoon, evening, or night).
-3. Formats the time in a colloquial expression.
-4. Synthesizes the text-to-speech audio using Piper and the pretrained model.
+3. Format the time in a colloquial expression.
+4. Synthesizes the text-to-speech audio using Piper and the pre-trained model.
 5. Plays the audio using SoX.
 
 ### License
