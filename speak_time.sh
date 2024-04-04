@@ -10,7 +10,7 @@ export XDG_RUNTIME_DIR=/run/user/$(id -u)
 current_time=$(date +'%I:%M %p')
 
 # Convert to 24-hour format to simplify comparisons
-hour24=$(date -d "$current_time" +"%H")
+hour24=$(date -d "$current_time" +"%H" | sed 's/^0*//')
 minute=$(date -d "$current_time" +"%M")
 formatted_time=""
 part_of_day=""
