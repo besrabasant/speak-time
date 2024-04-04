@@ -9,7 +9,7 @@ This project is a simple script that announces the current time in a colloquial 
 
 ## Installation
 - Install the required tools: **Piper** and **SoX**.
-- Download the suitable piper voices from [here](https://github.com/rhasspy/piper/blob/master/VOICES.md) (both voice model and the json) to the directory.
+- Download the suitable piper voices from [here](https://github.com/rhasspy/piper/blob/master/VOICES.md) (both voice model and the config) to the directory.
 - Update the **piper_path** variable in the script with the path to your Piper installation.
 
 ## Usage
